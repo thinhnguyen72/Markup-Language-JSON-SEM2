@@ -1,0 +1,11 @@
+<!DOCTYPE mydoc [
+    <!ELEMENT mydoc (data)>
+    <!ELEMENT data (#PCDATA)>
+    <!ATTLIST data
+        date CDATA #IMPLIED
+        sex (male|female) #IMPLIED
+        name CDATA #REQUIRED>
+]>
+<mydoc>
+    <data date="4/1/05" sex="male" name="John Doe">Some data</data>
+</mydoc>
